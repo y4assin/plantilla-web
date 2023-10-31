@@ -45,7 +45,7 @@
 		.button:hover {
 		  
 		 
-		background-color: #ff0000; /* Canvia el color de fons quan es passa el ratolí per sobre */
+		background-color: #ff0000; 
 		  color: #ffffff; /* Canvia el color de text quan es passa el ratolí per sobre */
 		}
 
