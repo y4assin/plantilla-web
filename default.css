@@ -2,7 +2,49 @@
 	{
 		height: 100%;
 	}
+
+	.rotating-image {
+		transition: transform 2s; 
+	  }
+	  
+	  .rotating-image:hover {
+		transform: rotate(360deg);
+	  }
+
+
+	  .imagen-rotativa {
+		transition: transform 0.5s; /* Agrega una transición suave a la propiedad transform */
+	  }
+	  
+	  .imagen-rotativa:hover {
+		transform: rotate(360deg); /* Hace girar la imagen 360 grados en hover */
+	  }
+	  
+	  .box span {
+		transition: color 0.5s; /* Agrega una transición suave al color del texto */
+	  }
+	  
+	  .box:hover span {
+		color: red; /* Cambia el color a tu preferencia */
+		cursor: pointer; /* Cambia el cursor al pasar el ratón por encima del texto */
+	  }
+	  
 	
+	.button {
+  
+ 
+		background-color: initial; /* Estableix el color de fons inicial (sense hover) */
+		  color: initial; /* Estableix el color de text inicial (sense hover) */
+		  transition: background-color 0.3s, color 0.3s; /* Transició suau per canviar els colors */
+		}
+		
+		.button:hover {
+		  
+		 
+		background-color: #ff0000; /* Canvia el color de fons quan es passa el ratolí per sobre */
+		  color: #ffffff; /* Canvia el color de text quan es passa el ratolí per sobre */
+		}
+
 	body
 	{
 		margin: 0px;
@@ -63,6 +105,30 @@
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
+#banner {
+    width: 100%; /* Asegura que el contenedor abarque todo el ancho de la pantalla */
+    overflow: hidden; /* Oculta cualquier contenido que desborde del contenedor */
+    position: relative; /* Para establecer el contexto de posicionamiento */
+}
+
+#banner img {
+    position: absolute	;
+    animation: moverCotxe 4s linear infinite; /* La animación se repite infinitamente en 4 segundos */
+}
+
+@keyframes moverCotxe {
+    0% {
+        left:0; /* Comienza desde la izquierda */
+    }
+    50% {
+        left: calc(100% - 100px); /* Se desplaza hacia la mitad de la pantalla */
+    }
+    100% {
+        left: 0; /* Vuelve a la posición inicial (izquierda) */
+    }
+}
+
+/* ANIMACIONES DE LAS 3 FOTOS CAJAS*/
 
 	.image
 	{
@@ -72,7 +138,7 @@
 	.image img
 	{
 		display: block;
-		width: 100%;
+		width: 200%;
 	}
 	
 	.image-full
