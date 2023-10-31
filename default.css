@@ -20,15 +20,19 @@
 		transform: rotate(360deg); /* Hace girar la imagen 360 grados en hover */
 	  }
 	  
-	  .box span {
+	  .box span a {
 		transition: color 0.5s; /* Agrega una transición suave al color del texto */
+		color: #FFFFFF;
+
 	  }
 	  
-	  .box:hover span {
+	  .box:hover span a {
 		color: red; /* Cambia el color  */
 		cursor: pointer; /* Cambia el cursor al pasar el ratón por encima del texto */
 	  }
-	  
+	  a {
+	color: #FFFFFF;
+		}
 	
 	.button {
   
